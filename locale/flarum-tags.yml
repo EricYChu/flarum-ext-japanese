@@ -99,3 +99,32 @@ flarum-tags:
     create_tag: タグを作成
     name: 名前
     tags: タグ
+
+  tag_name:
+    support: サポート
+    feedback: フィードバック
+    official: 公式
+    wallet: ウォレット
+    video: ビデオ
+    animation: アニメ
+    movie: 映画
+    graphic: 画像
+    illustration: イラスト
+    picture-book: 絵本
+    comic: コミック
+    gaming: ゲーム
+    literature: 文学
+    novel: 小説
+    poem: 詩
+    script: 脚本
+    music: 音楽
+    misc: その他
+    design: デザイン
+    features: 特色
+    events: イベント
+    services: サービス
+
+  tag_description:
+    support: ACGN サービスを使用および設定する際にぶつかる問題の解決方法を尋ねることができます。
+    feedback: ACGN サービスの機能とデザインについてディスカッションできます。
+    official: ACG Network に関するトピック。

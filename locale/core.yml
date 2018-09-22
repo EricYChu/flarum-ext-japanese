@@ -541,3 +541,13 @@ core:
     members: メンバー
     mod: モデレーター
     mods: モデレーター
+
+  link:
+    home: ホーム
+    presales: トークン プレセール
+    features: 特色
+    team: チーム
+    faq: よくある質問
+    whitepaper: ホワイトペーパー
+    blog: ブログ
+    community: コミュニティ

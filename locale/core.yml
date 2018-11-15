@@ -4,7 +4,7 @@ core:
       developer_text: 開発者の方へ。<a>ドキュメントを読んで</a>、オリジナルの拡張機能を作成することが可能です。
       install_text: 'また、<a>Flarum Community site</a>で拡張機能を探し、Composerを使って手動でインストールすることも可能です。'
       temporary_text: 近い将来、このダイアログを使って簡単にフォーラムへ拡張機能を追加できるようになります。現在システムを構築中！
-      title: 'Add Extension'
+      title: 拡張機能を追加
     appearance:
       colored_header_label: カラーヘッダー
       colors_heading: カラー
@@ -31,9 +31,9 @@ core:
       home_page_heading: トップページ
       home_page_text: ユーザーがあなたのフォーラムにアクセスしたときに最初に表示されるページを選択します。カスタム値を入力する場合は、フォーラムルートに関連するパスを使用します。
       saved_message: 変更が保存されました.
-      show_language_selector_label: 'Show language selector'
+      show_language_selector_label: 言語セレクターを表示します。
       submit_button: '=> core.ref.save_changes'
-      welcome_banner_heading: ウェルカムバナー
+      welcome_banner_heading: 歓迎バナー
       welcome_banner_text: フォーラムにやってきたユーザーにウェルカムを表示しましょう。全てのスレッドのページにこの文が出力されます。
       google_recaptcha_heading: 'Google reCAPTCHA'
       google_recaptcha_site_key_placeholder: 'Google reCAPTCHA Site Key'
@@ -82,18 +82,18 @@ core:
       username_label: '=> core.ref.username'
     sms:
       heading: '=> core.ref.sms'
-      text: 'Configure the SMS settings your forum will use to send sms.'
+      text: あなたのフォーラムがSMSを送信するために使用するSMS設定を構成します。
       driver_label: ドライバ
-      sender_name_label: 'Sender Name'
+      sender_name_label: 送信者名
       twilio_heading: Twilio
       twilio_verification_api_key_label: 'Verification API Key'
       submit_button: '=> core.ref.save_changes'
       paasoo_heading: PaaSoo
       paasoo_api_key_label: 'API Key'
       paasoo_api_secret_label: 'API Secret'
-      paasoo_sender_number_label: 'Sender Number'
-      paasoo_cn_message_template_label: 'China Message Template'
-      message_template: '[{sender}] Your verification code is {code}, please use it in {minutes} minutes.'
+      paasoo_sender_number_label: 送信者番号
+      paasoo_cn_message_template_label: 中国メッセージテンプレート
+      message_template: '[ {sender} ]あなたの認証コードは{code}です。 {minutes}で使用してください。'
     extensions:
       add_button: 拡張機能を追加
       settings_button: '=> core.ref.settings'
@@ -112,7 +112,7 @@ core:
       email_button: '=> core.ref.email'
       email_text: メール環境を設定します。
       sms_button: '=> core.ref.sms'
-      sms_text: 'Configure your forum''s SMS settings.'
+      sms_text: フォーラムのSMS設定を構成します。
       extensions_button: 拡張機能
       extensions_text: あなたのフォーラムに特別な機能を追加、または新しく機能を作成します。
       permissions_button: 権限
@@ -136,7 +136,7 @@ core:
       start_discussions_label: 新規スレッド
       view_discussions_label: スレッドを閲覧
       view_post_ips_label: 投稿のIPアドレスの表示
-      view_user_list_label: 'View user list'
+      view_user_list_label: ユーザー一覧
     permissions_controls:
       allow_indefinitely_button: 無期限
       allow_some_minutes_button: '{count}分間|{count}分間'
@@ -164,18 +164,19 @@ core:
       confirmation_message: '=> core.ref.confirmation_phone_changed'
       confirm_password_placeholder: '=> core.ref.confirm_password'
       dismiss_button: '=> core.ref.okay'
-      incorrect_password_message: 'The current password you entered is incorrect.'
+      incorrect_password_message: 入力した現在のパスワードが正しくありません。
       submit_button: '=> core.ref.save_changes'
       verify_button: '=> core.ref.verify'
       title: '=> core.ref.change_phone'
+      confirm_title: 'Confirm Current Phone'
     change_password:
-      confirmation_message: 'Your password has been changed successfully.'
+      confirmation_message: パスワードが正常に変更されました。
       submit_button: '=> core.ref.save_changes'
       title: '=> core.ref.change_password'
       old_password_placeholder: '=> core.ref.old_password'
       new_password_placeholder: '=> core.ref.new_password'
       dismiss_button: '=> core.ref.okay'
-      incorrect_password_message: 'The current password you entered is incorrect.'
+      incorrect_password_message: 入力した現在のパスワードが正しくありません。
     composer:
       close_tooltip: 閉じる
       exit_full_screen_tooltip: 全画面表示を解除
@@ -214,34 +215,34 @@ core:
       replied_text: '{username} が {ago} に返信'
       started_text: '{username} が {ago} に開始'
     edit_user:
-      activate_button: 'Activate User'
+      activate_button: ユーザーを有効にする
       email_heading: '=> core.ref.email'
       email_label: '=> core.ref.email'
       groups_heading: グループ
       password_heading: '=> core.ref.password'
       password_label: '=> core.ref.password'
-      set_password_label: 'Set new password'
+      set_password_label: 新しいパスワードの設定
       submit_button: '=> core.ref.save_changes'
       title: ユーザーを編集
       username_heading: '=> core.ref.username'
       username_label: '=> core.ref.username'
     forgot_password:
       phone_placeholder: '=> core.ref.phone'
-      phone_sent_message: 'We''ve sent a text message with a 6-digit verification code to reset your password.'
+      phone_sent_message: パスワードをリセットするための6桁の確認コードを含むテキストメッセージが送信されました。
       not_found_message: そのメールアドレスは登録されていません。
       submit_button: パスワードを復旧する
-      text: 'Enter your phone number and we will send you a 6-digit verification code to reset your password.'
+      text: 電話番号を入力すると、パスワードをリセットするための6桁の確認コードが送信されます。
       title: パスワードを紛失
     reset:
       confirm_password_placeholder: '=> core.ref.confirm_password'
       password_placeholder: '=> core.ref.password'
-      submit_button: 'Reset Password'
+      submit_button: パスワードリセット
       title: '=> core.ref.reset_your_password'
-      password_has_reset_message: 'Your password has been reset successfully.'
+      password_has_reset_message: パスワードが正常にリセットされました。
       dismiss_button: '=> core.ref.okay'
     header:
       admin_button: 管理
-      back_to_index_tooltip: 'Back to discussion list'
+      back_to_index_tooltip: 'ディスカッション リストに戻ります'
       log_in_link: '=> core.ref.log_in'
       log_out_button: '=> core.ref.log_out'
       profile_button: プロフィール
@@ -281,6 +282,8 @@ core:
       edited_text: 更新
       edited_tooltip: '{username} が {ago} に編集しました'
       number_tooltip: '{number}番目の投稿'
+      translate_link: 翻訳
+      original_link: オリジナル
     post_controls:
       delete_button: '=> core.ref.delete'
       delete_forever_button: '=> core.ref.delete_forever'
@@ -298,7 +301,7 @@ core:
       reply_placeholder: '=> core.ref.write_a_reply'
       time_lapsed_text: '{period} 後'
     rename_discussion:
-      title: 'Rename Discussion'
+      title: ディスカッションタイトルを変更
       submit_button: '=> core.ref.rename'
     search:
       all_discussions_button: 'すべてのスレッドについて "{query}" を検索'
@@ -367,8 +370,12 @@ core:
     phone_verification:
       phone_number_placeholder: '=> core.ref.phone_number'
       verification_code_placeholder: '=> core.ref.verification_code'
-      verification_text: 'For your security, we wants to make sure it’s really you. We will send a text message with a 6-digit verification code.'
-      verification_message_sent_message: 'The Verification message has send to {phone}.'
+      verification_text: 'セキュリティのためそれは本当にあなたを確認したいです。6 桁の確認コードをテキスト メッセージを送りします。'
+      verification_message_sent_message: '確認メッセージが{phone}送信されました。'
+      next_button: 次へ
+      send_button: コード送信
+      confirm_phone_title: 'Confirm Your Phone'
+      send_error_message: 'An error was encountered while trying to send code to your phone.'
     countries:
       af: アフガニスタン
       al: アルバニア
@@ -632,8 +639,8 @@ core:
       title: '=> core.ref.reset_your_password'
   api:
     invalid_username_message: ユーザー名には、文字、数字、およびダッシュのみを使用できます。
-    invalid_phone_message: 'This phone cannot be used for verification.'
-    failed_send_verification_code_message: 'Failed to send verification code, please try again.'
+    invalid_phone_message: この電話は確認に使用できません。
+    failed_send_verification_code_message: 確認コードを送信できませんでした。もう一度お試しください。
     invalid_verification_code_message: 確認コードは無効です。
     phone_not_verified_message: この携帯番号は確認されません。
     invalid_recaptcha_response_message: 'reCAPTCHA は無効です。'
@@ -671,7 +678,7 @@ core:
     notifications: 通知
     okay: OK
     password: パスワード
-    rename: Rename
+    rename: 名前の変更
     reply: 返信
     reset_your_password: パスワードリセット
     restore: 復元

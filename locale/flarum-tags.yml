@@ -84,6 +84,32 @@ flarum-tags:
     services: サービス
     stage: 舞台
     drama: ドラマ
+    comics: コミック
+    light-novel: ライトノベル
+    film: 映画
+    photography: 写真
+    documentary: ドキュメンタリー
+    adaptation: 脚色
+    character: キャラクター
+    cosplay: Cosplay
+    doujin: 同人
+    end: 完了
+    fashion: ファッション
+    knowledge: 知識
+    merchandise: 商品
+    origianl: オリジナル
+    ost: OST
+    promotion: プロモーション
+    recommendation: おすすめ
+    recruitment: 採用
+    reproduction: 転載
+    reviews: レビュー
+    scenario: シナリオ
+    serial: 連載
+    short-story: 短編
+    technical: 技術
+    tickets: チケット
+    trade: 売買
   tag_description:
     support: 'ACGN サービスを使用および設定する際にぶつかる問題の解決方法を尋ねることができます。'
     feedback: 'ACGN サービスの機能とデザインについてディスカッションできます。'
